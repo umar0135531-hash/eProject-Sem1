@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    height: 140px;
+    width: 100%;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header #logo img {
+    height: 100px;
+    margin: 30px 0 0 20px;
+}
+
+header #navbar {
+    display: flex;
+    /* margin-top: 65px; */
+
+}
+
+header #navbar li {
+    list-style:none;
+    margin:  15px;
+}
+
+header #navbar li a {
+    text-decoration: none;
+    color: #EDEADE	;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    transition: 0.5s;
+    position: relative;
+}
+
+header #navbar li a:hover, 
+header #navbar li a.active{
+    color: #2f7de1;
+}
+
+header #navbar li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0%;
+    height: 1.5px;
+    background: #2f7de1;
+    transition: .5s;
+}
+
+header #navbar li a:hover::after,
+header #navbar li a.active::after {
+    width: 70%;
+}
+
+
+#search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#search form {
+    display: flex;
+    margin: 0;
+}
+
+#search input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 300px;
+    background-color: #EDEADE	;
+}
+
+#search input:hover {
+    border: 1px solid #2f7de1;
+}
+
+#search button {
+    padding: 10px;
+    background-color: #EDEADE	;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    margin: 1px;
+}
+
+
+#search button:hover {
+    background-color: #2f7de1;
+    color: #fff;
+    margin-right: 30px;
+}
+
+.search-acc {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#icons a i{
+    color: #EDEADE	;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+#icons a i:hover {
+    opacity: .7;
+}
+
+#navbar .dropdown .drop-items a {
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+#navbar .dropdown .drop-items a:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+#navbar .dropdown {
+    position: relative;
+}
+#navbar .dropdown .drop-items {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 0;
+    background-color: #fff;
+    min-width: 130px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 10px 0;
+    z-index: 1000;
+}
+#navbar .dropdown .drop-items a {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    transition:  0.8s;
+    margin: 0;
+}
+#navbar .dropdown:hover .drop-items {
+    display: block;
+}
+
+.featured-products h1,
+.new-arrival h1 {
+    text-align: center;
+}
+
+
+
+/* HERO*/
+
+.hero {
+   /* width: 100%; */
+   /* height: 100vh; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+}
+.hero .content {
+    text-align: center;
+}
+.hero .content h1 {
+    font-size: 90px;
+    color: white;
+    margin-bottom: 50px;
+}
+.hero .content a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.hero .content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* SECTIONS */
+/* SECTIONS */
+
+/* FOOTER */
+footer {
+   padding: 10px   0   0   0;
+   display: flex;
+   justify-content: space-around;
+   background:#f5f5f2   ; 
+}
+
+footer .sm a {
+    color: black;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin: 25px 0px;
+    font-weight: 600;
+}
+
+footer p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+
+.fa {
+    margin: 0 5px;
+}
+
+
+footer .col2 li,
+footer .col3 li {
+    list-style: none;
+}
+
+footer .col2 li a,
+footer .col3 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+footer .apple-or-play img {
+    height: 65px;
+    border-radius: 10px;
+}
+
+
+
+/* LOGIN PAGE */
+/* ABOUT US */
+/* COMPARE PAGE */
+/* STORE PAGE */

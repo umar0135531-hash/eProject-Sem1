@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <style>
+
+            body {
+                background-color: rgb(183, 195, 216);
+            }
+            .products-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 30px;
+            }
+            h2 {
+                text-align: center;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <header>
+             <a href="index.html" id="logo"><img src="./assets/logo/NexTag Logo.png" alt="logo"></a>
+        <ul id="navbar">
+
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="products.html" class="active" >Shop</a></li>
+
+            <div class="dropdown">
+
+            <li><a class="btn" href="wallets.html">Wallets   <i class="fa-solid fa-caret-down"></i></a></li> 
+            <div class="drop-items">
+                <a href="#">Gucci</a>
+                <a href="#">Louis Vuitton</a>
+                <a href="#">Zara</a>
+                <a href="#">Prada</a>
+                <a href="#">YSL</a>
+            </div>
+
+            </div>
+            
+             <div class="dropdown">
+
+            <li><a class="btn" href="purse.html">Purses   <i class="fa-solid fa-caret-down"></i></a></li> 
+            <div class="drop-items">
+                <a href="#">Gucci</a>
+                <a href="#">Louis Vuitton</a>
+                <a href="#">Zara</a>
+                <a href="#">Prada</a>
+                <a href="#">YSL</a>
+            </div>
+
+            </div>     
+
+
+               
+            <li><a href="#">Gift Guide</a></li>      
+            <li><a href="#">About us</a></li>      
+        </ul>
+        <div class="search-acc">
+        <div id="search">
+            <form>
+                <input type="text" placeholder="Search...">
+                <button type="submit">Go</button>
+            </form> 
+        </div>
+        <div id="icons">
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>           
+        </div>
+        </div><!-- place navbar here -->
+        </header>
+
+        <main style=" padding: 140px 50px;" >
+
+           <div class="wallets-collection">
+               <marquee style="background-color: floralwhite;"> <h1>Wallet Collection</h1></marquee>
+               <div class="Gucci-collection">
+                    <h2>Gucci</h2>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/Logo/NexTag Logo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+               </div> 
+           </div>
+
+           <div class="purse-collection">
+                 <marquee style="background-color: floralwhite;"> <h1>Purse Collection</h1></marquee>
+           </div>
+
+        </main>
+
+        <footer>
+             <div class="col1 sm">
+            <a href="index.html"><img src="assets/Logo/NexTag Logo.png" alt=""></a>
+            <h3>Contact Us</h3>
+            <p><strong>Address:</strong> Block-3,Hussainabad, Near Noori Masjid,Karachi</p>
+            <p><strong>Phone:</strong>+923017565441</p>
+            <p><strong>Email:</strong>cokokob153@discounp.com</p>
+            <h3>Follow us on</h3>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="col2">
+            <h3>About </h3>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Delivery Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms&Conditions</a></li>
+            <li><a href="#">Contact us</a></li>
+
+        </div>
+        <div class="col3">
+            <h3>My Account</h3>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">View Bag</a></li>
+            <li><a href="#">My Wishlist</a></li>
+            <li><a href="#">Track My Order</a></li>
+            <li><a href="#">Help</a></li>
+        </div>
+        <div class="col4">
+            <H3>Install App</H3>
+            <p>From App Store or Google Play</p>
+            <div class="apple-or-play">
+                <a href="https://www.apple.com/app-store/"  target="_blank"><img src="assets/Footer buttons/download on the app store.png" alt=""></a>
+                <a  href="https://play.google.com/store/games?device=windows"target="_blank"><img src="assets/Footer buttons/get it on google play.png" alt=""></a>
+            </div>
+        </div><!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
